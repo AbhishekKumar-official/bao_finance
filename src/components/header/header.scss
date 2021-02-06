@@ -57,9 +57,32 @@ header{
                 padding-right: 16px;
                 text-decoration: none;
             }
+            .nav-link:hover, 
+            .nav-link:focus{
+                color: rgb(128, 94, 73);
+            }
             .active{
                 color: rgb(209, 108, 0);
             }
+        }
+        button{
+            -webkit-box-align: center;
+            align-items: center;
+            background-color: rgb(240, 233, 231);
+            border: 0px;
+            border-radius: 12px;
+            box-shadow: rgb(226, 214, 207) 4px 4px 8px, rgb(247, 244, 242) -8px -8px 16px;
+            color: rgb(209, 108, 0);
+            cursor: pointer;
+            display: flex;
+            font-size: 14px;
+            font-weight: 700;
+            height: 36px;
+            -webkit-box-pack: center;
+            justify-content: center;
+            outline: none;
+            padding-left: 16px;
+            padding-right: 16px;
         }
     }
 }
