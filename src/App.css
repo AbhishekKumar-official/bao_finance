@@ -8,3 +8,9 @@ body{
 a{
   outline: none;
 }
+.mb-24{
+  margin-bottom: 24px !important;
+}
+button{
+  font-family: Arial, Helvetica, sans-serif;
+}

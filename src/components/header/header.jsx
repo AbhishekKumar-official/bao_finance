@@ -32,12 +32,14 @@ class header extends Component {
                </a> 
                <nav>
                    <Link activeClassName="active" className="nav-link active" to="/">Home</Link>
-                   <Link activeClassName="active" className="nav-link">Menu</Link>
+                   <Link activeClassName="active" className="nav-link" to="Menu">Menu</Link>
                    <Link activeClassName="active" className="nav-link" target="_blank">Vote</Link>
                    <Link activeClassName="active" className="nav-link" target="_blank">About</Link>
                    <Link activeClassName="active" className="nav-link" target="_blank">FAQ</Link>
                </nav>
-               <button onClick={this.toggleModal}>Unlock Wallet</button>
+               <span className="nav-btn">
+                <button onClick={this.toggleModal}>Unlock Wallet</button>
+               </span>
             </div>
             <WalletModal show={modalVisible} onHide={() => this.setState({modalVisible:false})} />
         </header>
