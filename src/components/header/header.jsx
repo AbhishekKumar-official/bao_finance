@@ -1,5 +1,5 @@
 import React ,{Component} from 'react'
-import {NavLink} from "react-router-dom"
+import {NavLink, withRouter} from "react-router-dom"
 import logo from "../../images/logo.png";
 import WalletModal from "../modals/walletmodal"
 import "./header.scss"
@@ -15,6 +15,9 @@ class header extends Component {
         }
     }
     
+    handlePageChange = () => {
+        this.props.history.push("/home")
+    }
 
     toggleModal = () => {
         this.setState({
@@ -26,7 +29,7 @@ class header extends Component {
         return (
             <header>
             <div className="navbar">
-               <a href="javascript:void(0)" className="logo">
+               <a href="javascript:void(0)" onClick={this.handlePageChange} className="logo">
                 <img src={logo} alt="logo"/>
                 <span>Bao.Finance 
                     <span className="script">BaoChef</span>
@@ -49,4 +52,4 @@ class header extends Component {
     }
 }
 
-export default header
+export default withRouter(header) 
