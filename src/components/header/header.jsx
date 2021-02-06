@@ -1,5 +1,5 @@
 import React ,{Component} from 'react'
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 import logo from "../../images/logo.png";
 import WalletModal from "../modals/walletmodal"
 import "./header.scss"
@@ -9,7 +9,9 @@ class header extends Component {
         super(props)
     
         this.state = {
-            modalVisible:false
+            modalVisible:false,
+            home:true,
+            menu:false
         }
     }
     
@@ -20,7 +22,7 @@ class header extends Component {
         })
     }
     render() {
-        const {modalVisible} = this.state;
+        const {modalVisible,home,menu} = this.state;
         return (
             <header>
             <div className="navbar">
@@ -31,17 +33,17 @@ class header extends Component {
                 </span>
                </a> 
                <nav>
-                   <Link activeClassName="active" className="nav-link active" to="/">Home</Link>
-                   <Link activeClassName="active" className="nav-link" to="Menu">Menu</Link>
-                   <Link activeClassName="active" className="nav-link" target="_blank">Vote</Link>
-                   <Link activeClassName="active" className="nav-link" target="_blank">About</Link>
-                   <Link activeClassName="active" className="nav-link" target="_blank">FAQ</Link>
+                   <NavLink activeClassName="active" to="/home">Home</NavLink>
+                   <NavLink activeClassName="active" to="/menu">Menu</NavLink>
+                   <a href= "https://snapshot.page/#/baovotes.eth" target="__blank">Vote</a>
+                   <a href= "https://docs.bao.finance/" target="__blank">About</a>
+                   <a href= "https://docs.bao.finance/" target="__blank">FAQ</a>
                </nav>
                <span className="nav-btn">
                 <button onClick={this.toggleModal}>Unlock Wallet</button>
                </span>
             </div>
-            <WalletModal show={modalVisible} onHide={() => this.setState({modalVisible:false})} />
+            <WalletModal show={modalVisible} onHide={() => this.setState({modalVisible:false})} toggleModal={this.toggleModal}/>
         </header>
         )
     }

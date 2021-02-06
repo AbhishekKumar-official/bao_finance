@@ -32,7 +32,7 @@ const WalletModal = (props) => {
                   </div>
                 </Modal.Body>
                 <Modal.Footer>
-                  <button>Cancel</button>
+                  <button onClick={props.toggleModal ? props.toggleModal : props.toggleModalfn}>Cancel</button>
                 </Modal.Footer>
               </Modal>
             );

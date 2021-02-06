@@ -1,7 +1,11 @@
 import React from 'react'
 import logobanner from "../images/logo-banner.png";
 import "./Home.scss"
-const Home = () => {
+const Home = (props) => {
+
+    const handlePageChange = () => {
+        props.history.push("/menu")
+    }
     return (
         <div className="Home-Content">
             <div className="wrap-logo">
@@ -11,7 +15,7 @@ const Home = () => {
             </div>
             <h3>
                 Be sure to read&nbsp;
-                <a href="javascript:void(0)">docs.bao.finance</a>&nbsp; 
+                <a href="https://docs.bao.finance/" target="__blank">docs.bao.finance</a>&nbsp; 
                 before using the pools so you are familiar with protocol risks and fees.!
             </h3>
             <div className="wrap-locked">
@@ -57,7 +61,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <button>🔪 See the Menu</button>
+            <button onClick={handlePageChange}>🔪 See the Menu</button>
             <h3 className="mb-24">🏆
                 <b>Pro Tip</b>
                 : BAO-ETH UNI-V2 LP token pool yields 32x more tokens than other pairs.
