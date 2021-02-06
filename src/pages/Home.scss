@@ -1,0 +1,75 @@
+.Home-Content{
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 144px);
+
+    .wrap-logo{
+        box-sizing: border-box;
+        margin: 0px auto;
+        max-width: 600px;
+        padding: 0px 24px;
+        width: 100%;
+        -webkit-box-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 48px;
+        padding-top: 48px;
+
+        img{
+            height: 130px;
+            line-height: 130px;
+            text-align: center;     
+        }
+        h1{
+            font-family: "Kaushan Script", sans-serif;
+            color: rgb(91, 57, 38);
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0px;
+            padding: 0px;
+        }
+        h3{
+            color: rgb(170, 149, 133);
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+    }
+    h3{
+        color: rgb(128, 94, 73);
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0px;
+        padding: 0px;
+        text-align: center; 
+    }
+    .wrap-locked{
+        box-sizing: border-box;
+        margin: 0px auto;
+        max-width: 800px;
+        padding: 0px 24px;
+        width: 100%;
+        margin-top: 24px;
+
+        .wrap-row-one{
+            -webkit-box-align: center;
+            align-items: center;
+            display: flex;
+
+            .col{
+                background: rgb(240, 233, 231);
+                border: 1px solid rgb(226, 214, 207);
+                border-radius: 12px;
+                box-shadow: rgb(247 244 242) 1px 1px 0px inset;
+                display: flex;
+                flex: 1 1 0%;
+                flex-direction: column;
+            }
+        }
+    }
+}
