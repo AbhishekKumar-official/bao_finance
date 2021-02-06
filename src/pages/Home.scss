@@ -50,6 +50,14 @@
         padding: 0px;
         text-align: center; 
         line-height: 22px;
+
+        a{
+            color: #0000EE;
+            text-decoration: underline;
+        }
+        a:-webkit-any-link:active{
+            color: -webkit-activelink;
+        }
     }
     .wrap-locked{
         box-sizing: border-box;

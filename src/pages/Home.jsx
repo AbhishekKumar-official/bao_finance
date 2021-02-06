@@ -15,8 +15,8 @@ const Home = (props) => {
             </div>
             <h3>
                 Be sure to read&nbsp;
-                <a href="https://docs.bao.finance/" target="__blank">docs.bao.finance</a>&nbsp; 
-                before using the pools so you are familiar with protocol risks and fees.!
+                <a href="https://docs.bao.finance/" target="__blank">docs.bao.finance</a> 
+                &nbsp;before using the pools so you are familiar with protocol risks and fees.!
             </h3>
             <div className="wrap-locked">
                 <div className="wrap-row">

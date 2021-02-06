@@ -14,15 +14,15 @@ footer{
         align-items: center;
         display: flex;
 
-        .nav-link{
+        a{
             color: rgb(170, 149, 133);
             padding-left: 16px;
             padding-right: 16px;
             text-decoration: none;
         }
-        .nav-link:hover, 
-        .nav-link:focus{
+        a:hover{
             color: rgb(128, 94, 73);
+            text-decoration: none;
         }
     }
 }
