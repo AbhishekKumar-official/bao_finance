@@ -1,0 +1,65 @@
+header{
+    box-sizing: border-box;
+    margin: 0px auto;
+    max-width: 1200px;
+    padding: 0px 24px;
+    width: 100%;
+
+    .navbar{
+        -webkit-box-align: center;
+        align-items: center;
+        display: flex;
+        height: 72px;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+
+        .logo{
+            width: 260px;
+            -webkit-box-align: center;
+            align-items: center;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            margin: 0px;
+            min-height: 44px;
+            min-width: 44px;
+            padding: 0px;
+            text-decoration: none;
+
+            img{
+                height: 32px;
+                margin-top: -4px;
+            }
+            span{
+                color: rgb(91, 57, 38);
+                font-family: "Reem Kufi", sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 0.03em;
+                margin-left: 8px;
+
+                .script{
+                    font-family: "Kaushan Script", sans-serif;
+                }
+            }
+        }
+        nav{
+            -webkit-box-align: center;
+            align-items: center;
+            display: flex;
+
+            .nav-link{
+                color: rgb(170, 149, 133);
+                font-weight: 700;
+                padding-left: 16px;
+                padding-right: 16px;
+                text-decoration: none;
+            }
+            .active{
+                color: rgb(209, 108, 0);
+            }
+        }
+    }
+}
