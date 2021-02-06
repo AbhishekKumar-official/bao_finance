@@ -4,6 +4,7 @@ import Header from "./components/header/header"
 import Footer from "./components/footer/footer"
 import Home from "./pages/Home"
 import Menu from "./pages/Menu"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 const App = () => {
   return (
