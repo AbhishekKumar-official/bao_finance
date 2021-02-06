@@ -1,10 +1,28 @@
-import React from 'react'
+import React ,{Component} from 'react'
 import {Link} from "react-router-dom"
 import logo from "../../images/logo.png";
+import WalletModal from "../modals/walletmodal"
 import "./header.scss"
-const header = () => {
-    return (
-        <header>
+
+class header extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            modalVisible:false
+        }
+    }
+    
+
+    toggleModal = () => {
+        this.setState({
+            modalVisible: !this.state.modalVisible
+        })
+    }
+    render() {
+        const {modalVisible} = this.state;
+        return (
+            <header>
             <div className="navbar">
                <a href="javascript:void(0)" className="logo">
                 <img src={logo} alt="logo"/>
@@ -19,9 +37,12 @@ const header = () => {
                    <Link activeClassName="active" className="nav-link" target="_blank">About</Link>
                    <Link activeClassName="active" className="nav-link" target="_blank">FAQ</Link>
                </nav>
-               <button>Unlock Wallet</button>
+               <button onClick={this.toggleModal}>Unlock Wallet</button>
             </div>
+            <WalletModal show={modalVisible} onHide={() => this.setState({modalVisible:false})} />
         </header>
-    )
+        )
+    }
 }
+
 export default header
