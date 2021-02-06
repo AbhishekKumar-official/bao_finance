@@ -33,7 +33,7 @@ class header extends Component {
                 </span>
                </a> 
                <nav>
-                   <NavLink activeClassName="active" className="active" to="/home">Home</NavLink>
+                   <NavLink activeClassName="active" to="/home">Home</NavLink>
                    <NavLink activeClassName="active" to="/menu">Menu</NavLink>
                    <a href= "https://snapshot.page/#/baovotes.eth" target="__blank">Vote</a>
                    <a href= "https://docs.bao.finance/" target="__blank">About</a>
