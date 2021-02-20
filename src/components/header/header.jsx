@@ -31,8 +31,8 @@ class header extends Component {
             <div className="navbar">
                <a href="javascript:void(0)" onClick={this.handlePageChange} className="logo">
                 <img src={logo} alt="logo"/>
-                <span>Bao.Finance 
-                    <span className="script">BaoChef</span>
+                <span>Xbao.Finance 
+                    <span className="script">XbaoChef</span>
                 </span>
                </a> 
                <nav>

@@ -10,7 +10,7 @@ const Home = (props) => {
         <div className="Home-Content">
             <div className="wrap-logo">
                 <img src={logobanner} alt="logobanner"/>
-                <h1>BaoChef is Ready</h1>
+                <h1>XbaoChef is Ready</h1>
                 <h3>Stake Uniswap LP tokens and earn BAO!</h3>
             </div>
             <h3>
@@ -24,25 +24,25 @@ const Home = (props) => {
                         <div className="col-top">
                             <img src={logobanner} alt="logobanner"/>
                             <span>
-                                <h6>Your BAO Balance</h6>
+                                <h6>Your Xbao Balance</h6>
                                 <h1>Locked</h1>
                             </span>
                         </div>
                         <div className="col-bottom">
                             Pending harvest
-                            <span>0.000 BAO</span>
+                            <span>0.000 Xbao</span>
                         </div>
                     </div>
                     <div className="col">
                         <div className="col-top">
                             <span>
-                                <h6>Total BAO Supply</h6>
+                                <h6>Total Xbao Supply</h6>
                                 <h1>Locked</h1>
                             </span>
                         </div>
                         <div className="col-bottom">
                             New rewards per block
-                            <span>1.000 BAO</span>
+                            <span>1.000 Xbao</span>
                         </div>
                     </div>
                 </div>
@@ -64,16 +64,16 @@ const Home = (props) => {
             <button onClick={handlePageChange}>🔪 See the Menu</button>
             <h3 className="mb-24">🏆
                 <b>Pro Tip</b>
-                : BAO-ETH UNI-V2 LP token pool yields 32x more tokens than other pairs.
+                : XBAO-ETH UNI-V2 LP token pool yields 32x more tokens than other pairs.
             </h3>
             <h3 className="mb-24">💲
                 <b>Pro Tip</b>
-                : The affiliate links from the "Buy X" buttons generate revenue for the Bao Treasury which Bao holders own. <br />
+                : The affiliate links from the "Buy X" buttons generate revenue for the Xbao Treasury which Xbao holders own. <br />
                 Even if you already trade at these exchanges consider creating a new account to help grow the protocol.
             </h3>
             <h3>❗️
                 <b>Disclaimer</b>
-                : Bao is currently in alpha and has a one-person engineering team. <br />
+                : Xbao is currently in alpha and has a one-person engineering team. <br />
                 While we are scaling, there may be higher than normal risk of bugs and we may be slower in being able to respond to them.<br />
                 Please partake accordingly.<br />
                 The service is provided as-is.
